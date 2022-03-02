@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    
+</head>
+
+<body>
+    <div class="row">
+        <div class="content" id="content">
+            <img src="flower.jpg" id="image"><br><br>
+            <div class="data">
+                <h1 id="heading1">Hover mouse here.....</h1>
+                <h1 id="heading2">hi hallo world.....</h1>
+            </div>
+        </div>
+    </div>
+<script>
+    document.getElementById("content").addEventListener("mouseover",change1);
+    document.getElementById("content").addEventListener("mouseout",change2);
+    function change1(){
+        document.getElementById('image').src = "flower1.jpg";
+        document.getElementById('heading1').style.display="none";
+        document.getElementById('heading2').style.display="block";
+    }
+    function change2(){
+        document.getElementById('image').src="flowe1.jpg";
+        document.getElementById('heading1').style.display="block";
+        document.getElementById('heading2').style.display="none";
+    }
+</script>
+</body>
+</html>
